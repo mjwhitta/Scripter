@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:orientation="vertical">
+
+   <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="10dip"
+      android:text="@string/path_to_scripts"
+      android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+   <EditText
+      android:id="@+id/scripts_path"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:inputType="text"
+      android:padding="10dip">
+      <requestFocus/>
+   </EditText>
+
+   <Button
+      android:id="@+id/settings_ok_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dip"
+      android:text="@android:string/ok"/>
+</LinearLayout>

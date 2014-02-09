@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<CheckBox
+			android:id="@+id/run_as_root"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="@string/run_as_root"/>
+
+		<CheckBox
+			android:id="@+id/hide_output"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="@string/hide_output"/>
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/args"/>
+
+	<EditText
+		android:id="@+id/script_args"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="top"
+		android:inputType="text"
+		android:padding="10dip">
+	</EditText>
+
+	<EditText
+		android:id="@+id/script_text"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:gravity="top"
+		android:inputType="textMultiLine"
+		android:padding="10dip">
+
+		<requestFocus/>
+	</EditText>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/save_button"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_weight="0.33"
+			android:padding="10dip"
+			android:text="@string/save"/>
+
+		<Button
+			android:id="@+id/back_button"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_weight="0.34"
+			android:padding="10dip"
+			android:text="@string/back"/>
+	</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="sites.mjwhitta.scripter" android:versionCode="14"
+	android:versionName="2.3">
+
+	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="17" />
+
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<application android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name">
+		<activity android:name="sites.mjwhitta.scripter.ScriptListActivity"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="sites.mjwhitta.scripter.EditScriptActivity" />
+
+		<activity android:name="sites.mjwhitta.scripter.CreateShortcutActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.CREATE_SHORTCUT" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="sites.mjwhitta.scripter.ShortcutActivity"
+			android:exported="true" />
+	</application>
+</manifest>

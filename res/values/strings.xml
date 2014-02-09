@@ -1,0 +1,19 @@
+<resources>
+
+	<string name="app_name">$cripter</string>
+	<string name="args">Arguments</string>
+	<string name="back">Back</string>
+	<string name="blank">Text here</string>
+	<string name="delete">Delete</string>
+	<string name="edit">Edit</string>
+	<string name="hide_output">Hide\noutput?</string>
+	<string name="menu_add_script">Add Script</string>
+	<string name="menu_refresh">Refresh</string>
+	<string name="menu_settings">Settings</string>
+	<string name="name">Name:</string>
+	<string name="parent_dir">Directory:</string>
+	<string name="path_to_scripts">Enter path to script directories separated by :\'s</string>
+	<string name="run_as_root">Run as\nroot?</string>
+	<string name="save">Save</string>
+
+</resources>

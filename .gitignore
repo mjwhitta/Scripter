@@ -1,0 +1,14 @@
+.classpath
+.project
+.settings
+
+gen
+bin
+build
+
+*.ap_
+*.dex
+*.class
+.gradle
+local.properties
+proguard
